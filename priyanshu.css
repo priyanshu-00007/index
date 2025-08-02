@@ -393,25 +393,7 @@ body{
   }
    
   
-  .git button{
-    
-      font-weight: 600;
-      border-radius: 10px;
-      height: 45px;
-      width: 130px;
-      background-color: #00ff00;
-      border: none;
-      cursor: pointer;
-      transition: all 0.3s;
-      overflow: hidden;
-        margin-left: 10px; 
-  }
-
-
-.git button:hover{
-    background: linear-gradient(to right, rgb(248, 7, 248), yellow);
-}
-.minor-proj{
+  .minor-proj{
     height: 80vh;
     width: 100%;
     color: #fff;
@@ -424,7 +406,7 @@ body{
     margin-bottom: -200px;
 }
 .minor-proj2{
-    height: 10vh;
+  height: 10vh;
     width: 100%;
     color: #fff;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -432,10 +414,10 @@ body{
     justify-content: center;
     gap: 60px;
     
-  
+    
     margin-bottom: -200px;
-}
-.mproj{
+  }
+  .mproj{
     height: 20vw;
     width: 20vw;
     border: 2px solid white;
@@ -444,9 +426,9 @@ body{
     transition: all ease 0.3s;
     z-index: 99;
     transform: scale(1);
-}
-
-.mproj2{
+  }
+  
+  .mproj2{
     height: 20vw;
     width: 20vw;
     border: 2px solid white;
@@ -455,19 +437,19 @@ body{
     transition: all ease 0.3s;
     z-index: 99;
     transform: scale(1);
-}
+  }
 
+  
+  .git i {
+    color: #ffffff;
+    font-size: 1.5rem;
+  }
 
-.git i {
-  color: #ffffff;
-  font-size: 1.5rem;
-}
-
-
-.git button a {
-  text-decoration: none;
-  color: #04131b;
-  font-size: 1rem;
+  
+  .git button a {
+    text-decoration: none;
+    color: #04131b;
+    font-size: 1rem;
   display: block;
   width: 100%;
   height: 100%;
@@ -475,11 +457,11 @@ body{
   line-height: 45px;
 }
 .mproj:hover{
-    transform: scale(1.1);
+  transform: scale(1.1);
 
 }
 .mproj2:hover{
-    transform: scale(1.1);
+  transform: scale(1.1);
 
 }
 @media (max-width: 900px) {
@@ -502,7 +484,7 @@ body{
   .git{
     margin-bottom: 2vw;
   }
-
+  
   .mproj2{
     width: 80vw;
     height: 80vw;
@@ -510,22 +492,22 @@ body{
 }
 
 #img5{
-   
-    position: relative;
-    top: -27vw;
-    right:12vw;
-    height: 45vw;
+  
+  position: relative;
+  top: -27vw;
+  right:12vw;
+  height: 45vw;
     overflow: hidden;
 }
 #contact{
-    height: 8vw;
-    width: 100%;
-    background-color: #fff;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-     gap: 20px;
-    padding:0 50px;
+  height: 8vw;
+  width: 100%;
+  background-color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  padding:0 50px;
 }
 #cont-left{
     display: flex;
@@ -534,8 +516,8 @@ body{
     align-items: center;
     color: #000000;
 
-}
-@media (max-width: 900px) {
+  }
+  @media (max-width: 900px) {
   #contact {
     flex-direction: column;
     height: auto;
@@ -553,39 +535,39 @@ body{
     gap: 20px;
     font-size: 40px;
     
-   
-
-}
+    
+    
+  }
 @media (max-width: 900px) {
   #projects {
     flex-direction: column;
     align-items: center;
     padding: 0 20px;
   }
-
+  
 }
 #about{
-    height: 50vh;
-    width: 100%;
-    background-color: #04131b;
-    color: #fff;
-   
+  height: 50vh;
+  width: 100%;
+  background-color: #04131b;
+  color: #fff;
+  
 }
 .abt{
     height:43vh;
     width: 25vw;
-  
+    
     display: flex;
     color: #fff;
- text-align: left;
+    text-align: left;
 
-}
-.about-a{
+  }
+  .about-a{
     text-decoration: none;
     color: #fff;
     line-height: 30px;
 
-}
+  }
 #about-head{
     display: flex;
     justify-content: center;
@@ -599,7 +581,7 @@ body{
     display: flex;
     justify-content: space-between;
     align-items: center;
-}
+  }
 @media (max-width: 1100px) {
   #body-front {
     display: flex;
@@ -644,15 +626,20 @@ body{
     display: none;
   }
 }
-.git button {
-  font-weight: 600;
-  border-radius: 10px;
-  height: 45px;
-  width: 130px;
-  background-color: #00ff00;
-  border: none;
-  cursor: pointer;
-  transition: all 0.3s;
+
+  .git button:hover{
+    background-color: #005d67 ;
+  }
+  .git button {
+    margin-left: 10px; 
+    font-weight: 600;
+    border-radius: 10px;
+    height: 45px;
+    width: 130px;
+    background-color: #068585;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s;
 }
 .git button + button {
   margin-left: 10px;
@@ -673,15 +660,11 @@ body{
   margin-top: 10px;
 }
 
-
-
 .git button a {
   text-decoration: none;
   color: #04131b;
   font-size: 1rem;
 }
-
-
 
 /* Responsive adjustments */
 @media (max-width: 768px) {
@@ -719,6 +702,5 @@ body{
 
 
         
-
 
 
