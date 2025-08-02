@@ -345,51 +345,78 @@ body{
   }
 }
 #part{
-    margin-top: 150px;
-    display: flex;
-    justify-content: center;
+  margin-top: 150px;
+  display: flex;
+  justify-content: center;
 }
 #line{
-    width: 95%;
-    border-bottom:2px white dashed ;
+  width: 95%;
+  border-bottom:2px white dashed ;
 }
 #projects{
-    width: 100%;
+  width: 100%;
     min-height:80vh;
     margin-top: 50px;
     display: flex;
     gap: 30px;
     padding: 0 50px;
     
+    
+  }
+  .git{
+      align-items: center;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 15px;
+      flex-wrap: wrap;
+      margin-top: 20px;
+  }
+  .proj {
+    width: 90vw;
+    height: auto;
 
-}
-.proj{
-    height:70vh;
-    width: 50vw;
     border: solid white 2px;
     border-radius: 30px;
     background-color: #04131b;
     transition: all ease 0.3s;
     transform: scale(1);
     z-index: 9;
-   
-}
-.proj:hover{
+    height: auto;
+    padding: 30px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .proj:hover{
     transform: scale(1.1);
-
-}
-.topic-name{
+    
+  }
+  .topic-name{
     color: #fff;
     text-align: center;
     font-family:Verdana, Geneva, Tahoma, sans-serif;
-}
-.git button{
-     font-weight: 400;
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+    
+  }
+   
+  
+  .git button{
+    
+      font-weight: 600;
       border-radius: 10px;
-       height:50px; width: 100px;
+      height: 45px;
+      width: 130px;
+      background-color: #00ff00;
+      border: none;
+      cursor: pointer;
+      transition: all 0.3s;
+      overflow: hidden;
         margin-left: 10px; 
-        background-color: #00ff00;
-}
+  }
+
+
 .git button:hover{
     background: linear-gradient(to right, rgb(248, 7, 248), yellow);
 }
@@ -427,6 +454,7 @@ body{
     z-index: 99;
     transform: scale(1);
 }
+
 .mproj2{
     height: 20vw;
     width: 20vw;
@@ -436,6 +464,24 @@ body{
     transition: all ease 0.3s;
     z-index: 99;
     transform: scale(1);
+}
+
+
+.git i {
+  color: #ffffff;
+  font-size: 1.5rem;
+}
+
+
+.git button a {
+  text-decoration: none;
+  color: #04131b;
+  font-size: 1rem;
+  display: block;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  line-height: 45px;
 }
 .mproj:hover{
     transform: scale(1.1);
@@ -462,13 +508,13 @@ body{
     margin-bottom: 0;
     padding-bottom: 50px;
   }
+  .git{
+    margin-bottom: 2vw;
+  }
 
-  .mproj {
+  .mproj2{
     width: 80vw;
-    height: auto;
-  }.mproj2{
-    width: 80vw;
-    height: auto;
+    height: 80vw;
   }
 }
 
@@ -526,10 +572,6 @@ body{
     padding: 0 20px;
   }
 
-  .proj {
-    width: 90vw;
-    height: auto;
-  }
 }
 #about{
     height: 50vh;
@@ -593,7 +635,7 @@ body{
     gap: 10px;
   }
 }
-@media (max-width: 600px) {
+@media (max-width: 800px) {
   .proj, .mproj, .mproj2 {
     width: 90vw !important;
     height: auto;
@@ -609,6 +651,65 @@ body{
 @media (max-width: 600px) {
   #img5 {
     display: none;
+  }
+}
+.git button {
+  font-weight: 600;
+  border-radius: 10px;
+  height: 45px;
+  width: 130px;
+  background-color: #00ff00;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+.git button + button {
+  margin-left: 10px;
+}
+
+
+.proj-desc {
+  color: #fff;
+  line-height: 1.7;
+  text-align: left;
+  margin: 10px 0;
+  padding: 0 10px;
+}
+
+.proj-lang {
+  color: #fff;
+  margin-left: 20px;
+  margin-top: 10px;
+}
+
+
+
+.git button a {
+  text-decoration: none;
+  color: #04131b;
+  font-size: 1rem;
+}
+
+
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .git {
+    flex-direction: column;
+    gap: 12px;
+  }
+
+
+  .proj-desc {
+    text-align: center;
+    font-size: 4vw;
+  }
+
+  
+
+  .proj-lang {
+    text-align: center;
+    margin-left: 0;
   }
 }
 
