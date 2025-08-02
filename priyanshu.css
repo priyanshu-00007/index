@@ -8,9 +8,7 @@ body{
     min-height: 100%;   width: 100%;
 } 
 #nav-link {
-    /* background: linear-gradient(to right, rgb(21, 45, 223), orange, rgb(68, 68, 11), green, blue, indigo, violet);
-    -webkit-background-clip:text;
-    -webkit-text-fill-color: transparent; */
+    
     font-size: 30px;   font-weight: 600;
      position: fixed;
     height: 13vh;
@@ -22,9 +20,7 @@ body{
      z-index: 1000;
     }
 #fake-header {
-    /* background: linear-gradient(to right, rgb(21, 45, 223), orange, rgb(68, 68, 11), green, blue, indigo, violet);
-    -webkit-background-clip:text;
-    -webkit-text-fill-color: transparent; */
+ 
     font-size: 30px;   font-weight: 600;
    
     
@@ -254,9 +250,8 @@ body{
     /* height: 10vw;   width: 15vw; */
     border: 2px solid white;
     border-radius: 10%;
-   
-     /* align-items: center; */
-     position: relative;
+ 
+  position: relative;
   width: 190px;
   height: 200px;
   background-color: #000;
@@ -278,7 +273,7 @@ body{
 #img3{
     position: absolute;
     top: -3vw;
-    /* right:1vw; */left: 1vw;
+    left: 1vw;
     height: 40vw;
     overflow: hidden;
     rotate: 270deg;
@@ -288,14 +283,11 @@ body{
 #img4{
     position: absolute;
     top: 40vw;
-    /* right:1vw; */right: -2vw;
+    right: -2vw;
     height: 30vw;
-   
     display: flex;
     rotate: 90deg;
     z-index: -1;
-
-    /* z-index: 9; */
 }
 
 
@@ -375,7 +367,6 @@ body{
   .proj {
     width: 90vw;
     height: auto;
-
     border: solid white 2px;
     border-radius: 30px;
     background-color: #04131b;
@@ -698,26 +689,23 @@ body{
     flex-direction: column;
     gap: 12px;
   }
-
-
+  #circle{
+    height: 50vw;
+    width: 50vw;
+    margin-top: -60vw ;
+  }
+  #img1{
+     height: 50vw;
+    width: 50vw;
+  }
+  #img2{
+    position: absolute;
+    margin-top: -10px;
+  }
   .proj-desc {
     text-align: center;
     font-size: 4vw;
   }
-    @media (max-width:768px) {
-    .abt{
-      flex-direction: column;
-      gap: 12px;
-    }
-    .about-contant{
-      flex-direction: column;
-      gap: 12px;
-    }
-    
-  }
-
-  
-
   .proj-lang {
     text-align: center;
     margin-left: 0;
@@ -726,7 +714,10 @@ body{
 
 
 
-        
 
+
+
+
+        
 
 
