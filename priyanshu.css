@@ -704,6 +704,17 @@ body{
     text-align: center;
     font-size: 4vw;
   }
+    @media (max-width:768px) {
+    .abt{
+      flex-direction: column;
+      gap: 12px;
+    }
+    .about-contant{
+      flex-direction: column;
+      gap: 12px;
+    }
+    
+  }
 
   
 
@@ -716,5 +727,6 @@ body{
 
 
         
+
 
 
