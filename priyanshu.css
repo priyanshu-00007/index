@@ -293,11 +293,10 @@ body{
    
     display: flex;
     rotate: 90deg;
+    z-index: -1;
+
     /* z-index: 9; */
 }
-
-
-/* From Uiverse.io by gharsh11032000 */ 
 
 
 .skil-item::before {
@@ -372,6 +371,7 @@ body{
     background-color: #04131b;
     transition: all ease 0.3s;
     transform: scale(1);
+    z-index: 9;
    
 }
 .proj:hover{
@@ -567,9 +567,51 @@ body{
     justify-content: space-between;
     align-items: center;
 }
-#about-left{
-   
+@media (max-width: 1100px) {
+  #body-front {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    width: 100%;
+  }
 }
+@media (max-width: 600px) {
+  #front-left #into h3 {
+    font-size: 7vw;
+    line-height: 8vw;
+    text-align: center;
+  }
+  #front-left #into p {
+    font-size: 4vw;
+    text-align: center;
+  }
+}
+@media (max-width: 600px) {
+  #cont-right {
+    font-size: 30px;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+}
+@media (max-width: 600px) {
+  .proj, .mproj, .mproj2 {
+    width: 90vw !important;
+    height: auto;
+  }
+}
+@media (max-width: 600px) {
+  #front-right #img1,
+  #circle {
+    width: 60vw;
+    height: 60vw;
+  }
+}
+@media (max-width: 600px) {
+  #img5 {
+    display: none;
+  }
+}
+
 
 
         
