@@ -10,7 +10,7 @@ body {
     min-height: 100%;   width: 100%;
 } 
 .logo{
-    margin:5vw;
+ 
   height: 10vh;
   width: 10vw;
 
@@ -18,7 +18,7 @@ body {
 @media (max-width:900px) {
   .logo{
   height: 10vh;
-  width: 25vw;
+  width: 27vw;
 
 }
 
@@ -807,6 +807,7 @@ body {
 
 
         
+
 
 
 
