@@ -1,12 +1,28 @@
 *{
     font-family:Verdana, Geneva, Tahoma, sans-serif;   box-sizing: border-box;
 }
-body{
+body {
+  font-family: 'Poppins', sans-serif;
+
     margin: 0; padding: 0;
 } #main{
     background-color: #000;
     min-height: 100%;   width: 100%;
 } 
+.logo{
+  height: 10vh;
+  width: 10vw;
+
+}
+@media (max-width:900px) {
+  .logo{
+  height: 10vh;
+  width: 27vw;
+
+}
+
+  
+}
 #nav-link {
     
     font-size: 30px;   font-weight: 600;
@@ -191,6 +207,7 @@ body{
 }
 #moving-text{
     white-space: nowrap;
+    font-size: 20px;
     overflow-x: auto;    
     
     
@@ -232,6 +249,9 @@ body{
   #body-front {
     flex-direction: column;
     height: auto;
+  }
+  .con{
+    font-size: 10vw;
   }
   #front-left, #front-right {
     width: 100%;
@@ -336,12 +356,12 @@ body{
     height: auto;
   }
 }
-#part{
+.part{
   margin-top: 150px;
   display: flex;
   justify-content: center;
 }
-#line{
+.line{
   width: 95%;
   border-bottom:2px white dashed ;
 }
@@ -546,14 +566,14 @@ body{
   }
   
 }
-#about{
+#footer{
   height: 50vh;
   width: 100%;
   background-color: #04131b;
   color: #fff;
   
 }
-.abt{
+.foot{
     height:43vh;
     width: 25vw;
     
@@ -562,21 +582,31 @@ body{
     text-align: left;
 
   }
-  .about-a{
+  .foot-a{
     text-decoration: none;
     color: #fff;
     line-height: 30px;
 
   }
-#about-head{
+#footer-head{
     display: flex;
     justify-content: center;
     align-items: center;
+    text-align: center;
     margin-top: 20px;
     margin-bottom: 20px;
     height: 30px;
 }
-#about-contant{
+@media (max-width:800) {
+  #footer-contact{
+    height: 50vw;
+    flex-direction: column;
+    justify-content: center;
+  }
+  
+  
+}
+#footer-contant{
     padding: 0 5vw;
     display: flex;
     justify-content: space-between;
@@ -621,11 +651,11 @@ body{
     height: 60vw;
   }
 }
-@media (max-width: 600px) {
+/* @media (max-width: 600px) {
   #img5 {
     display: none;
   }
-}
+} */
 
   .git button:hover{
     background-color: #005d67 ;
@@ -694,6 +724,80 @@ body{
     margin-left: 0;
   }
 }
+#about {
+  min-height: 100vh;
+  width: 100%;
+}
+
+.abt {
+  height: auto;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.abt-left, .abt-right {
+  width: 50%;
+  height: auto;
+  padding: 10px;
+}
+ @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&display=swap');
+.abt-left img {
+  /* object-fit: contain; */
+  width: 100%;
+  height: 35vw;
+  max-width: 100%;
+}
+.abt-right{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.abt-right h2{
+  color: #fff;
+  font-family:'Playfair Display', serif;
+  text-align: justify;
+
+  line-height:35px;
+  line-break: loose;
+  align-items: center;
+}
+.abt-right img {
+  /* object-fit: contain; */
+  width: 100%;
+  height: 35vw;
+  max-width: 100%;
+}
+.abt-left h2{
+  color: #fff;
+  font-family:'Playfair Display', serif;
+  text-align: justify;
+  word-spacing: 5px;
+ 
+
+
+
+/* font-family: 'Poppins', sans-serif; */
+  line-height:40px;
+  line-break: loose;
+  align-items: center;
+}
+
+/* Responsive for small screens */
+@media (max-width: 768px) {
+  .abt-left, .abt-right {
+    height: -100px;
+    width: 100%;
+  }
+  
+}
+
+
+
+
+
+
+
 
 
 
